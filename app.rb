@@ -9,5 +9,6 @@ get('/') do
 end
 
 get('/result') do
+  @input = params.fetch('input_string').title_case
   erb(:result)
 end
