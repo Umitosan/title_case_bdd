@@ -8,7 +8,7 @@ get('/') do
   erb(:index)
 end
 
-get('/result') do
-  @input = params.fetch('input_string').title_case
-  erb(:result)
+get('/title') do
+  @input = params.fetch('title').title_case
+  erb(:title)
 end
